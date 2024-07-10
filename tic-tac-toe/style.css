@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(251, 221, 231);
+}
+.ask{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem; 
+    text-align: center;
+}
+.choices{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.opt{
+    height: max(8vh,100px);
+    width: max(45vw,300px);
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+.opt:hover{
+    background-color: rgb(137, 48, 137);
+    cursor: pointer;
+}
+header{
+    background-color: purple;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.8rem;
+    padding-left: 5px;
+}
+.container{ 
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.play{
+    position: relative;
+    display: grid;
+    width: 31rem;
+    height: 31rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box{
+    height: 10rem;
+    width: 10rem;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.play :hover{
+    background-color: rgb(243, 183, 192);
+    cursor: pointer;
+}
+#btn{
+    background-color: pink;
+    height: 35px;
+    width: 55px;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.turn{
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+#result{
+    color: purple;
+    font-size: 3rem;
+}
+#line{
+    width:30rem;
+    height:4px;
+    background-color: darkslateblue;
+    position: absolute;
+    
+}
+@media screen and (max-width: 800px)  {
+    .container{
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .play{
+        width:25rem;
+        height: 25rem;
+    }
+    .box{
+        height: 8rem;
+        width: 8rem;
+    }
+    #line{
+        width:24rem;
+    }
+    .info{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 400px)  {
+    .container{
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .play{
+        width:19rem;
+        height: 19rem;
+    }
+    .box{
+        height: 6rem;
+        width: 6rem;
+    }
+    #line{
+        width:18rem;
+    }
+    .info{
+        justify-content: center;
+        align-items: center;
+    }
+    .ask{
+        font-size: 1.2rem;
+    }
+}
