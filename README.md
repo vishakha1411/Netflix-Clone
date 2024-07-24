@@ -20,3 +20,9 @@ This project is a Tic Tac Toe game implemented using HTML, CSS, and JavaScript. 
 - Real-time game status updates and visual feedback
 - Reset button to start a new game easily
 
+
+##3. Twitter(X) UI clone
+
+###Description
+This project creates a social media interface similar to Twitter using HTML and TailwindCSS. It includes responsive design for various screen sizes.
+
